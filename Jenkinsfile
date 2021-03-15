@@ -5,7 +5,7 @@ node ('master'){
        checkout scm
     }  
     stage('SAST'){
-        build 'SECURITY-SAST-SNYK'
+        //build 'SECURITY-SAST-SNYK'
     }
 
     
@@ -32,7 +32,7 @@ node ('master'){
     }
     
     stage('DAST') {
-        build 'SECURITY-DAST-OWASP_ZAP'
+        //build 'SECURITY-DAST-OWASP_ZAP'
     }
  
 }
